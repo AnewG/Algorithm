@@ -1,4 +1,5 @@
 algorithm [ python ]
 =================
 
-insert sort
+ * insert sort
+ * merge sort (sub)
