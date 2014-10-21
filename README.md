@@ -1,4 +1,4 @@
-algorithm-py-php-
+algorithm [ python ]
 =================
 
-algorithm[ py &amp; php ]
+insert sort
