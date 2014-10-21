@@ -5,7 +5,7 @@ def merge_sort_sub(list, s, m, l):
     inputl.append(infinite)
     inputr.append(infinite)
     i = j = 0
-    for k in xrange(len(list)):
+    for k in xrange(s, l):
         if inputl[i] < inputr[j]:
             list[k] = inputl[i]
             i = i + 1
@@ -14,6 +14,19 @@ def merge_sort_sub(list, s, m, l):
             j = j + 1
 
 
-x = [1, 3, 5, 7, 9, 2, 4, 6, 8, 10, 14]
-merge_sort_sub(x, 0, len(x)/2, len(x))
-print x
+def merge_sort(list, s, l):
+    if l > s:
+        m = (s+l)/2
+        if l - s > 2:
+            merge_sort(list, s, m)
+            merge_sort(list, m, l)
+        merge_sort_sub(list, s, m, l)
+
+from random import shuffle
+x = [i for i in range(10)]
+
+for z in xrange(1, 10):
+    shuffle(x)
+    merge_sort(x, 0, len(x))
+    print x
+
