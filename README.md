@@ -5,3 +5,4 @@ algorithm [ python ]
  * merge sort (sub)
  * random list
  * heap sort
+ * quick sort
