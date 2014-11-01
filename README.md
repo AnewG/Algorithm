@@ -1,4 +1,4 @@
-algorithm [ python ]
+algorithm [ python 实现 ]
 =================
 
  * insert sort
