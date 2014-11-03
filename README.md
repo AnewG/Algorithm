@@ -6,3 +6,4 @@ algorithm [ python 实现 ]
  * random list
  * heap sort
  * quick sort
+ * counting sort
