@@ -1,4 +1,4 @@
-algorithm [ python 实现 ]
+algorithm [ python 实现 ] - PEP8
 =================
 
  * insert sort
@@ -8,3 +8,5 @@ algorithm [ python 实现 ]
  * quick sort
  * counting sort
  * radix sort
+
+ * linked list
