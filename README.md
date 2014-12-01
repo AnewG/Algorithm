@@ -1,7 +1,7 @@
 algorithm [ python 实现 ] - PEP8
 =================
 
- * insert sort
+ * insert sort 
  * merge sort (sub)
  * random list
  * heap sort
