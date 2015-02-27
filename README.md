@@ -21,3 +21,5 @@ algorithm [ python 实现 ] - PEP8
 
 MySQL Index B+Tree ：http://blog.codinglabs.org/articles/theory-of-mysql-index.html
 http://blog.csdn.net/v_july_v/article/details/6530142
+
+MySQL MyISAM Innodb：http://blog.csdn.net/php10086/article/details/6334164
