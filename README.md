@@ -20,3 +20,4 @@ algorithm [ python 实现 ] - PEP8
 当在对红黑树进行插入和删除等操作时，对树做了修改可能会破坏红黑树的性质。为了继续保持红黑树的性质，可以通过对结点进行重新着色，以及对树进行相关的旋转操作，即通过修改树中某些结点的颜色及指针结构，来达到对红黑树进行插入或删除结点等操作后继续保持它的性质或平衡的目的。
 
 MySQL Index B+Tree ：http://blog.codinglabs.org/articles/theory-of-mysql-index.html
+http://blog.csdn.net/v_july_v/article/details/6530142
