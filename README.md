@@ -23,3 +23,31 @@ MySQL Index B+Tree ：http://blog.codinglabs.org/articles/theory-of-mysql-index.
 http://blog.csdn.net/v_july_v/article/details/6530142
 
 MySQL MyISAM Innodb：http://blog.csdn.net/php10086/article/details/6334164
+
+动态规划
+
+```
+CUT-ROD(p,n) // p为价格数组 p[1..n],n为长度
+  if n==0
+    return 0
+  q=-oo
+  for i = i to n
+    q=max(q,p[i]+CUT-ROD(p,n-i))
+  return q
+```
+
+这种情况将反复地用相同的参数对自身进行递归调用，即反复求解相同的子问题
+
+假设n＝4
+
+```
+        4
+     /  \  \ \    
+    3    2  1 0
+  / \\  /\  |  
+ 2  1 0 1 0 0
+/\  |   |
+1 0 0   0
+|
+0
+```
