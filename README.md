@@ -8,12 +8,11 @@ algorithm [ python 实现 ] - PEP8
  * quick sort
  * counting sort
  * radix sort
-
  * linked list
 
 =================
 
-红黑树
+## 红黑树
 
 黑树虽然本质上是一棵二叉查找树，但它在二叉查找树的基础上增加了着色和相关的性质使得红黑树相对平衡，从而保证了红黑树的查找、插入、删除的时间复杂度最坏为O(log n)。
 
@@ -26,7 +25,7 @@ http://blog.csdn.net/v_july_v/article/details/6530142
 
 MySQL MyISAM Innodb：http://blog.csdn.net/php10086/article/details/6334164
 
-动态规划
+## 动态规划
 
 ```
 CUT-ROD(p,n) // p为价格数组 p[1..n],n为长度
@@ -76,6 +75,8 @@ return r[n]
 动态规划方法将问题分解为多个子问题，然后将子问题的最优解整合成原问题的最优解。作贪心算法时，只有一个非空子问题，将递归算法转化为迭代算法。
 
 贪心算法应用之一：赫夫曼编码
+
+##堆
 
 二项堆是指满足以下性质的  *!* 二项树 *!*  的集合：
 
