@@ -1,4 +1,4 @@
-algorithm [ python 实现 ] - PEP8
+algorithm
 =================
 
  * insert sort 
