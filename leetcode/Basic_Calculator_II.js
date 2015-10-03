@@ -1,0 +1,90 @@
+/**
+
+Implement a basic calculator to evaluate a simple expression string.
+
+The expression string contains only non-negative integers, +, -, *, / operators and empty spaces . The integer division should truncate toward zero.
+
+You may assume that the given expression is always valid.
+
+Some examples:
+"3+2*2" = 7
+" 3/2 " = 1
+" 3+5 / 2 " = 5
+Note: Do not use the eval built-in library function.
+
+ * @param {string} s
+ * @return {number}
+ */
+var calculate = function(s) {
+    var resultStack = [];
+    var opStack = [];
+    var temp = "";
+    for(var i = 0; i < s.length; i++){
+        var ch = s[i];
+        if(/^(\+|\-)$/.test(ch)){ // + -
+            compress_2operators(ch);
+            opStack.push(ch);
+        }else if(/^(\/|\*)$/.test(ch)){
+            compress_2operators(ch);
+            opStack.push(ch);
+        }else if(ch === '('){
+            opStack.push(ch);
+        }else if(ch === ')'){
+            compress_bracket();
+        }else if(/^[0-9]$/.test(ch)){
+            temp += ch;
+        }
+
+        if(s[i + 1] && /^(\+|\-|\(|\)|\/|\*)$/.test(s[i + 1])){ // + - * / ( )
+            if(temp !== ""){
+                resultStack.push(parseInt(temp));
+                temp = "";
+            }
+        }
+    }
+    if(temp !== ""){
+        resultStack.push(parseInt(temp));
+        temp = "";
+    }
+    compress_2operators('#');
+    return resultStack.pop();
+
+    function getPerority(ch){
+        if(ch === '('){
+            return 0;
+        }else if(/^(\+|\-)$/.test(ch)){
+            return 1;
+        }else if(/^(\/|\*)$/.test(ch)){
+            return 2;
+        }
+        return -1;
+    }
+    function compress_bracket(){
+        while(opStack[opStack.length - 1] !== '('){
+            compress_2operators('(');
+        }
+        opStack.pop(); //(
+    }
+    function compress_2operators(ch){
+        var perority = getPerority(ch);
+        while(/^(\+|\-|\/|\*)$/.test(opStack[opStack.length - 1])){ // + - * /
+            var top = opStack[opStack.length - 1];
+            if(perority <= getPerority(top)){
+                var op = opStack.pop();
+                var right = resultStack.pop();
+                var left = resultStack.pop();
+                if(op === '+'){
+                    resultStack.push(left + right);
+                }else if(op === '-'){
+                    resultStack.push(left - right);
+                }else if(op === '/'){
+                    resultStack.push(parseInt(left / right));
+                }else if(op === '*'){
+                    resultStack.push(left * right);
+                }
+            }else{
+                return;
+            }
+        }
+    }
+};
