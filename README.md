@@ -1,3 +1,8 @@
+```
+why n(n-1)/2 = (n-1)+(n-2)+...+1
+http://www.maths.surrey.ac.uk/hosted-sites/R.Knott/runsums/triNbProof.html
+```
+
 排序方法：
 =================
 
