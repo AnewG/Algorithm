@@ -2,7 +2,7 @@
 why n(n-1)/2 = (n-1)+(n-2)+...+1
 http://www.maths.surrey.ac.uk/hosted-sites/R.Knott/runsums/triNbProof.html
 
-图-广度优先运行时间为 边数+顶点数
+图-广度优先运行时间为 边数+顶点数 能够有效找出边数最少的，但找出的不一定是总值最小的
 ```
 
 排序方法：
