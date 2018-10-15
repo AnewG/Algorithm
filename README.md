@@ -7,6 +7,9 @@ Dijkstra's Algorithm 适用于 "非负权边的有向图"
 有负权边的可以使用 贝尓曼-福德(bellman-ford) 算法
 
 贪婪算法：每个局部最优解逐步完成到全局，就可以认为是全局最优解
+
+数学上，给定集合 S，其幂集是以 S的全部子集为元素的集合
+https://zh.wikipedia.org/wiki/%E5%86%AA%E9%9B%86  2的n次方
 ```
 
 排序方法：
