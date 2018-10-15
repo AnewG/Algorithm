@@ -3,6 +3,8 @@ why n(n-1)/2 = (n-1)+(n-2)+...+1
 http://www.maths.surrey.ac.uk/hosted-sites/R.Knott/runsums/triNbProof.html
 
 图-广度优先运行时间为 边数+顶点数 能够有效找出边数最少的，但找出的不一定是总值最小的
+Dijkstra's Algorithm 适用于 "非负权边的有向图"
+有负权边的可以使用 贝尓曼-福德(bellman-ford) 算法
 ```
 
 排序方法：
