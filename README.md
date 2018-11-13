@@ -206,3 +206,7 @@ NP完全问题的简单定义是，以难解著称的问题，如旅行商问题
    图的表示有以下3种
    
 ```
+
+![Alt text](img/data_present.png?raw=true "Title")
+![Alt text](img/data_present2.png?raw=true "Title")
+![Alt text](img/data_present3.png?raw=true "Title")
