@@ -1,3 +1,6 @@
+基础：
+=================
+
 ```
 why n(n-1)/2 = (n-1)+(n-2)+...+1 ~ N*N/2
 http://www.maths.surrey.ac.uk/hosted-sites/R.Knott/runsums/triNbProof.html
@@ -187,3 +190,9 @@ NP完全问题的简单定义是，以难解著称的问题，如旅行商问题
 
 ```
 
+图：
+=================
+
+```
+@TODO
+```
