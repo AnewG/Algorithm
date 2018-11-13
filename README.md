@@ -210,3 +210,11 @@ NP完全问题的简单定义是，以难解著称的问题，如旅行商问题
 ![Alt text](img/data_present.png?raw=true "Title")
 ![Alt text](img/data_present2.png?raw=true "Title")
 ![Alt text](img/data_present3.png?raw=true "Title")
+
+```
+
+ * 深度优先
+   
+ * 广度优先（原理用先进先出队列，结果路径可能较短）
+   
+```
