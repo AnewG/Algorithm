@@ -293,6 +293,12 @@ NP完全问题的简单定义是，以难解著称的问题，如旅行商问题
 
 ![sp](img/d2.jpg?raw=true "sp")
 
+![sp](img/f1.png?raw=true "sp")
+
+![sp](img/f2.png?raw=true "sp")
+
+![sp](img/f3.png?raw=true "sp")
+
 ```
 
  * 最短路径问题
