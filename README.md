@@ -293,6 +293,6 @@ NP完全问题的简单定义是，以难解著称的问题，如旅行商问题
 
  * 最短路径问题
 
-   Dijkstra, Bellman–Ford
+   Dijkstra(广度优先), Bellman–Ford
 
 ```
