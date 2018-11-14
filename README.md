@@ -284,3 +284,15 @@ NP完全问题的简单定义是，以难解著称的问题，如旅行商问题
    一个有向图是无圈图当且仅当它没有背向边
 
 ```
+
+![sp](img/shortest_path.png?raw=true "sp")
+
+![sp](img/Dijkstra.gif?raw=true "sp")
+
+```
+
+ * 最短路径问题
+
+   Dijkstra, Bellman–Ford
+
+```
