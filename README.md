@@ -430,4 +430,32 @@ KMP算法的本质是构造一个DFA（确定性有限状态自动机）
 DFA[r][j] 行是匹配串字母表，列是索引 DFA[r][j] 表示"在已匹配 j 个字符时，若当前字符串字母为 r ，已匹配数量会变成多少"
 动态规划
 
+匹配过程：
+
+    private final int R;       // the radix
+    private int[][] dfa;       // the KMP automoton
+
+    private String pat;
+
+    public KMP(String pat) {
+        this.R = 256;   //设置字典大小
+        this.pat = pat;
+
+        //构造pat对应的dfa
+        int M = pat.length();
+        dfa = new int[R][M];
+        dfa[pat.charAt(0)][0] = 1;
+        for (int X = 0, j = 1; j < M; j++) {  //X记录匹配失败时的索引位置,j指向pat
+
+            for (int c = 0; c < R; c++) {     //对于匹配失败的情况，直接复制重启状态
+                dfa[c][j] = dfa[c][X];
+            }
+
+            dfa[pat.charAt(j)][j] = j + 1;    //匹配成功的指向下一个状态
+
+            X = dfa[pat.charAt(j)][X];        //更新重启位置X
+        }
+
+    }
+
 ```
