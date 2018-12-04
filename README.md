@@ -477,4 +477,6 @@ DFA，Deterministic Finite Automata，确定的有限状态自动机。
 
 而DFA更方便计算机去运算执行。嗯，至于NFA，则是正则表达式转DFA中间的一个过渡图。因为一步到位搞不定，而且有时候ε作为输入是蛮方便的
 
+http://www.evanlin.com/moocs-coursera-automata-note1/
+
 ```
