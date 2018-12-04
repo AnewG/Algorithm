@@ -458,4 +458,7 @@ DFA[r][j] 行是匹配串字母表，列是索引 DFA[r][j] 表示"在已匹配 
 
     }
 
+boyer-moore算法；
+http://www.ruanyifeng.com/blog/2013/05/boyer-moore_string_search_algorithm.html
+
 ```
