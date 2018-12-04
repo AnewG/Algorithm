@@ -461,4 +461,20 @@ DFA[r][j] 行是匹配串字母表，列是索引 DFA[r][j] 表示"在已匹配 
 boyer-moore算法；
 http://www.ruanyifeng.com/blog/2013/05/boyer-moore_string_search_algorithm.html
 
+=============================================
+
+正则，DFA，NFA
+
+NFA，Nondeterministic Finite Automata，不确定的有限状态自动机。
+
+要先理解FA先，也就是有限状态自动机，其实就是个识别器，只能对每个可能的输入串简单地回答“是”或“否”。
+
+然后NFA是一种FA，其特点是在某个状态S下输入某个字符a，可以进入多个不同状态，还有就是空串ε也可以作为输入字符标号。
+
+DFA，Deterministic Finite Automata，确定的有限状态自动机。
+
+是一种特殊的NFA，因为DFA规定了每个状态对每个字符输入只有一个后继状态，而且不用空串ε作为输入字符，其余和NFA一样。
+
+而DFA更方便计算机去运算执行。嗯，至于NFA，则是正则表达式转DFA中间的一个过渡图。因为一步到位搞不定，而且有时候ε作为输入是蛮方便的
+
 ```
