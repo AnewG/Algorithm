@@ -527,6 +527,24 @@ e(2), empty(4), l(4), w(4), [null](5)
  
 循环直至构建完成
 
+```
 
+![sp](img/hfm1.jpeg?raw=true "kmp")
+![sp](img/hfm2.jpeg?raw=true "kmp")
+
+```
+
+字符  编码 
+===   ===
+null   10
+w      01
+l      00
+e      110
+i      1111
+r      11101
+u      11100
+
+we will we will r u => 
+01 110 10 01 1111 00 00 10 01 110 10 01 1111 00 00 10 11101 10 11100
 
 ```
