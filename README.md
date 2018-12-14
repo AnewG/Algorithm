@@ -549,4 +549,6 @@ we will we will r u =>
 
 还有 LZW字典 和 算数编码 2种方式 https://segmentfault.com/a/1190000011425787
 
+后缀数组：用于求最长公共子串
+
 ```
