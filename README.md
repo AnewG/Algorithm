@@ -306,6 +306,7 @@ NP完全问题的简单定义是，以难解著称的问题，如旅行商问题
    Dijkstra(广度优先的动态规划,存在负数环会失效), Bellman–Ford(能算最短路径，也可以检测负数环,n-1 次循環，不断利用已經找到的最短路徑去更新其它點的)
    
    https://www.cs.usfca.edu/~galles/visualization/Dijkstra.html
+   https://www-m9.ma.tum.de/graph-algorithms/spp-bellman-ford/index_en.html
 
 ```
 
